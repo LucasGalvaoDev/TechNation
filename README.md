@@ -5,11 +5,11 @@
 
 ##
 
-Olá, equipe de recrutamento da TechNation.
+Olá, equipe de recrutamento da TechNation,
 
-Fico muito feliz em poder participar dessa opotrunidade também finalizar o desafio.
+Estou muito feliz pela oportunidade de participar deste processo seletivo e por ter completado o desafio.
 
-Usei nesse projeto:
+Para este projeto, utilizei as seguintes tecnologias:
 
 - .Net 6.0
 - EntityFrameworkCore 6.0.10
@@ -27,11 +27,25 @@ Segue abaixo mais algumas imagens:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/373e3ddb-7413-4f15-b6cc-46244140b45b" />
   <img src="https://github.com/user-attachments/assets/4591f78a-f737-4cf3-bc5f-72d86e796078" />
+  <img src="https://github.com/user-attachments/assets/9400e92f-2484-49ee-a712-dba1fe48cdaa" />
 </div>
 
 ##
 
 # Instruções e observações:
 
-No Docker
+O banco de dados utilizado está localizado na raiz do projeto, no arquivo chamado technationdb.
 
+Configurei o container e os dados do Docker na raiz do projeto. No entanto, encontrei um problema com o banco de dados que não consegui resolver a tempo. Portanto, ao acessar o código via Docker, a parte visual será exibida corretamente, mas os dados do banco não serão carregados.
+
+Se você executar o projeto diretamente pelo Visual Studio, o código será carregado conforme mostrado na primeira imagem.
+
+A conexão com o banco de dados está configurada para acessar diretamente pelo Windows, sem a necessidade de autenticação de usuário.
+
+# Instruções para Build e Execução:
+
+Para construir a imagem do Docker, use o seguinte comando: docker build -t technationex .
+
+Para iniciar o container e o código, use o seguinte comando: docker run -p 5000:80 technationex
+
+Ao iniciar o código, acesse a página via HTTP, não HTTPS: http://localhost:5000
