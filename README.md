@@ -1,4 +1,4 @@
-# TECHNATION TESTE TÉCNICO
+# TechNation Teste Técnico
 <div align="center">
   <img src="https://github.com/user-attachments/assets/5322079c-b4e8-45b9-9d9d-2bb57f1e0154" />
 </div>
