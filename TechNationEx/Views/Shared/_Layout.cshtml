@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - TechNationEx</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/site.css" />
+</head>
+<body>
+    <div class="sidebar">
+        <div style="text-align:center;">
+            <img src="https://framerusercontent.com/assets/wfsesV7PnVKH8GvFxwsdStQ.png" style="width:100px;"/>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item" style="margin-top: 30px;">
+                <a class="nav-link @(ViewData["ActivePage"] == "Dashboard" ? "active" : "")" href="@Url.Action("Index", "Home")"><i class="fas fa-chart-line" style="margin-right: 5px;"></i>Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link @(ViewData["ActivePage"] == "NotasEmitidas" ? "active" : "")" href="@Url.Action("NotasEmitidas", "Home")"><i class="far fa-file-alt" style="margin-right: 5px;"></i>Notas Emitidas</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="top-navbar">
+        <div class="toggle-sidebar">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="page-title">@ViewData["Title"]</div>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Campo meramente ilustrativo.">
+            <div class="search-icon">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+
+        <div class="user-profile">
+            <img src="https://st.depositphotos.com/1537427/3571/v/450/depositphotos_35717211-stock-illustration-vector-user-icon.jpg" alt="User">
+            <div class="user-info">
+                <div class="name">John Doe</div>
+                <div class="role">Super Admin</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        @RenderBody()
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script> 
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

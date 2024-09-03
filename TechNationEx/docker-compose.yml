@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  technationex:
+    build: .
+    ports:
+      - "5000:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=TechNation;User Id=sa;Password=senha1234;
+    depends_on:
+      - sqlserver
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "senha1234"
+    ports:
+      - "1433:1433"

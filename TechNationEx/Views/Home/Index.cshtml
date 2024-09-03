@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container">
+    <h2>Dashboard</h2>
+
+    <!-- Filtros -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="filterAno">Ano</label>
+                <input type="number" class="form-control" id="filterAno" placeholder="Ano" min="1900">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="filterTrimestre">Trimestre</label>
+                <select class="form-control" id="filterTrimestre">
+                    <option value="">Todos</option>
+                    <option value="1">1º Trimestre</option>
+                    <option value="2">2º Trimestre</option>
+                    <option value="3">3º Trimestre</option>
+                    <option value="4">4º Trimestre</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="filterMes">Mês</label>
+                <select class="form-control" id="filterMes">
+                    <option value="">Todos</option>
+                    <option value="1">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Indicadores -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card marginb">
+                <div class="card-body">
+                    <h5 class="card-title">Total Notas Emitidas</h5>
+                    <p class="card-text" id="totalNotasEmitidas">R$ 0.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card marginb">
+                <div class="card-body">
+                    <h5 class="card-title">Total Sem Cobrança</h5>
+                    <p class="card-text" id="totalSemCobranca">R$ 0.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card marginb">
+                <div class="card-body">
+                    <h5 class="card-title">Total Inadimplente</h5>
+                    <p class="card-text" id="totalInadimplente">R$ 0.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card marginb">
+                <div class="card-body">
+                    <h5 class="card-title">Total a Vencer</h5>
+                    <p class="card-text" id="totalAVencer">R$ 0.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card marginb">
+                <div class="card-body">
+                    <h5 class="card-title">Total Pagas</h5>
+                    <p class="card-text" id="totalPagas">R$ 0.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gráficos -->
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Gráfico de Inadimplência</h3>
+            <canvas id="inadimplenciaChart"></canvas>
+        </div>
+        <div class="col-md-6">
+            <h3>Gráfico de Receita Recebida</h3>
+            <canvas id="receitaChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./js/dashboard.js"></script>
+
