@@ -26,7 +26,7 @@ Segue abaixo mais algumas imagens:
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/373e3ddb-7413-4f15-b6cc-46244140b45b" />
-  <img src="https://github.com/user-attachments/assets/4591f78a-f737-4cf3-bc5f-" />
+  <img src="https://github.com/user-attachments/assets/4591f78a-f737-4cf3-bc5f-72d86e796078" />
 </div>
 
 # CRIAR UMA POKEDEX COM AS SEGUINTES FUNCIONALIDADES:
