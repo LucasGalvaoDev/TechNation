@@ -29,30 +29,9 @@ Segue abaixo mais algumas imagens:
   <img src="https://github.com/user-attachments/assets/4591f78a-f737-4cf3-bc5f-72d86e796078" />
 </div>
 
-# CRIAR UMA POKEDEX COM AS SEGUINTES FUNCIONALIDADES:
-
-- [ ] Mostra um gif do pokemon na tela
-- [ ] Apresenta a tipagem com as cores relacionadas
-- [ ] Mostra o nome e o ID referente ao pokemon na pokedex
-- [ ] Botão que avança na pokedex e volta (tratando para não tentar buscar nenhum pokemon anterior ao 1, pois não existe)
-- [ ] Construção de um input onde podemos enviar o nome do pokemon ou o id dele na pokedex (sendo possível enviar a informação somente caso a o input esteja preenchido)
-
 ##
 
-# PLUS
+# Instruções e observações:
 
-- [ ] Botão de submit para envio do texto digitado (melhor uso para mobile)
-- [ ] Botão de shiny, onde ao clicar nele muda o pokemon que está na tela para sua versão shiny e clicando de novo volta para a versão normal
-- [ ] Botão de status (+), onde apresenta uma div ao lado da pokedex mostrando os status do pokemon que está na tela (nisso você pode usar uma modal ou algo do tipo, um fazer no simples mesmo como fiz no exemplo)
+No Docker
 
-##
-
-# API PARA CONSUMIR NO PROJETO
-
-- https://pokeapi.co/
-
-##
-
-Achei uma experiência muito positiva e espero que vocês gostem e topem o novo desafio.
-Dessa forma unimos os nossos conhecimentos em front-end e os de consumo de API com essa grande e famosa franquia. 
-As possibilidades são gigantestas.
