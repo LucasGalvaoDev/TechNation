@@ -25,8 +25,8 @@ Usei nesse projeto:
 Segue abaixo mais algumas imagens:
 
 <div align="center">
-  <img width=200 height=300 src="https://user-images.githubusercontent.com/121260233/232157504-80360d28-b133-4cc6-8f61-aaef1e51b3a9.png" />
-  <img width=200 height=300 src="https://user-images.githubusercontent.com/121260233/232158103-22bc247b-9045-48f2-afc9-4a7d35ed0428.png" />
+  <img src="https://github.com/user-attachments/assets/373e3ddb-7413-4f15-b6cc-46244140b45b" />
+  <img src="https://github.com/user-attachments/assets/4591f78a-f737-4cf3-bc5f-" />
 </div>
 
 # CRIAR UMA POKEDEX COM AS SEGUINTES FUNCIONALIDADES:
