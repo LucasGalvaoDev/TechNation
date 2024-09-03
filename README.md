@@ -30,8 +30,6 @@ Segue abaixo mais algumas imagens:
   <img src="https://github.com/user-attachments/assets/9400e92f-2484-49ee-a712-dba1fe48cdaa" />
 </div>
 
-##
-
 # Instruções e observações:
 
 O banco de dados utilizado está localizado na raiz do projeto, no arquivo chamado technationdb.
