@@ -1,6 +1,6 @@
 # TECHNATION TESTE TÉCNICO
 <div align="center">
-  <img width=200 height=300 src="https://github.com/user-attachments/assets/5322079c-b4e8-45b9-9d9d-2bb57f1e0154" />
+  <img src="https://github.com/user-attachments/assets/5322079c-b4e8-45b9-9d9d-2bb57f1e0154" />
 </div>
 
 ##
